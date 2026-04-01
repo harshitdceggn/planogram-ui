@@ -240,7 +240,7 @@ export default function PlanogramConverter() {
   // RENDER
   // ═══════════════════════════════════════════════════════════════════════════
   return (
-    <div style={{ minHeight: "100vh", background: "#0f1117", fontFamily: "'IBM Plex Mono', 'Courier New', monospace", color: "#e2e8f0", padding: "32px 20px" }}>
+    <div style={{ minHeight: "100vh", background: "#0f1117", fontFamily: "'IBM Plex Mono', 'Courier New', monospace", color: "#e2e8f0", padding: "32px 32px" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 
@@ -447,7 +447,7 @@ export default function PlanogramConverter() {
         .dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
       `}</style>
 
-      <div style={{ maxWidth: 960, margin: "0 auto" }}>
+      <div style={{ width: "100%" }}>
 
         {/* ── Header ─────────────────────────────────────────────────────── */}
         <div style={{ marginBottom: 36, display: "flex", alignItems: "flex-start", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
