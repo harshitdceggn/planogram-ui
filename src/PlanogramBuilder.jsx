@@ -240,12 +240,13 @@ export default function PlanogramConverter() {
   // RENDER
   // ═══════════════════════════════════════════════════════════════════════════
   return (
-    <div style={{ minHeight: "100vh", background: "#0f1117", fontFamily: "'IBM Plex Mono', 'Courier New', monospace", color: "#e2e8f0", padding: "32px 32px" }}>
+    <div style={{ minHeight: "100vh", width: "100%", background: "#0f1117", fontFamily: "'IBM Plex Mono', 'Courier New', monospace", color: "#e2e8f0", padding: "32px" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        html, body { min-height: 100%; width: 100%; background: #0f1117; }
+        html, body { min-height: 100vh; width: 100%; margin: 0; padding: 0; background: #0f1117; overflow-x: hidden; }
+        #root, [data-reactroot] { min-height: 100vh; width: 100%; background: #0f1117; }
 
         ::-webkit-scrollbar { width: 6px; height: 6px; }
         ::-webkit-scrollbar-track { background: #1a1d27; }
